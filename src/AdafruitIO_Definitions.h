@@ -26,6 +26,8 @@ class AdafruitIO_Data;
 typedef void (*AdafruitIODataCallbackType)(
     AdafruitIO_Data *data); /*!< Data callback type */
 
+#include <SEGGER_RTT.h>
+
 /**************************************************************************/
 /*!
     @brief  Class that contains methods for Adafruit IO MQTT callbacks.
@@ -86,7 +88,7 @@ public:
 #define AIO_DEBUG_PRINT(...)                                                   \
   {} ///< Prints debug output
 #define AIO_DEBUG_PRINTLN(...)                                                 \
-  {} ///< Prints line from debug output.
+  {RTTPrint(0, (__VA_ARGS__}; ///< Prints line from debug output.
 #endif
 
 // Define actual error output functions when necessary.

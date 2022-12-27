@@ -45,12 +45,9 @@ public:
   bool save(int value, double lat = 0, double lon = 0, double ele = 0);
   bool save(unsigned int value, double lat = 0, double lon = 0, double ele = 0);
   bool save(long value, double lat = 0, double lon = 0, double ele = 0);
-  bool save(unsigned long value, double lat = 0, double lon = 0,
-            double ele = 0);
-  bool save(float value, double lat = 0, double lon = 0, double ele = 0,
-            int precision = 6);
-  bool save(double value, double lat = 0, double lon = 0, double ele = 0,
-            int precision = 6);
+  bool save(unsigned long value, double lat = 0, double lon = 0, double ele = 0);
+  bool save(float value, double lat = 0, double lon = 0, double ele = 0, int precision = 6);
+  bool save(double value, double lat = 0, double lon = 0, double ele = 0, int precision = 6);
 
   bool get();
 

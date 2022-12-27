@@ -15,6 +15,8 @@
 #ifndef ADAFRUITIO_WIFI_H
 #define ADAFRUITIO_WIFI_H
 
+#define USE_WINC1500
+
 #if defined(ARDUINO_SAMD_MKR1000)
 
 #include "wifi/AdafruitIO_MKR1000.h"
